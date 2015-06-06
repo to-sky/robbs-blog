@@ -11,8 +11,12 @@ get_header(); ?>
 	$loop = new WP_Query( $args );
 ?>
 <div class="fotorama">
-	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>				
-		<img src="http://s.fotorama.io/1.jpg">
+	<?php while ( $loop->have_posts() ) : $loop->the_post(); 
+		$postId = get_the_ID();
+		$thumbId = get_post_thumbnail_id($postId);
+		$url = wp_get_attachment_thumb_url($thumbId);
+	?>			
+		<a href="<?php echo  ?>"><img src="<?php echo $url; ?>"></a>
 	<?php endwhile; ?>
 </div>
 
