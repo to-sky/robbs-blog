@@ -15,8 +15,8 @@ get_header(); ?>
 		$postId = get_the_ID();
 		$thumbId = get_post_thumbnail_id($postId);
 		$url = wp_get_attachment_thumb_url($thumbId);
-	?>			
-		<a href="<?php echo  ?>"><img src="<?php echo $url; ?>"></a>
+	?>
+		<a href="www.ya.ru"><img src="<?php echo $url; ?>"></a>
 	<?php endwhile; ?>
 </div>
 
