@@ -2,6 +2,7 @@
 /*
 Template Name: Books
 */
+<<<<<<< HEAD
 get_header(); ?>
 
 <?php
