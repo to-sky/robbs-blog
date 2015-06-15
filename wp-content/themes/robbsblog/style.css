@@ -114,7 +114,12 @@ input {
 	text-align: center;
 }
 .error-name {
-	color: #c61010;
+	display: block;
+	color: #e1e1e1;
+	font-style: italic;
+	font-size: 10em;
+	padding-bottom: .34em;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1);
 }
 .return{
 	display: block;
@@ -124,14 +129,7 @@ input {
 	font-weight: 900;
 	font-size: 1.1em;
 }
-.img-404 {
-	width: inherit;
-}
-.wrap-404 {
-	width: 450px;
-	margin: 0 auto;
-}
-/*-------- Error404 page-----------------*/
+/*-------- end Error404 page-----------------*/
 
 /*-------- Left sidebar -----------------*/
 .left-sidebar {
@@ -141,15 +139,20 @@ input {
 .logo-bg {
 	width: 280px;
 	height: 266px;
-	background: url(../img/ring.png) no-repeat;
+	background: url("images/ring.png") no-repeat;
 }
 .logo-bg img {
-	width: 120px;
-	height: 120px;
+	width: 121px;
+	height: 121px;
     float: left;
     margin-top: 73px;
     margin-left: 80px;
     border-radius: 60px;
+}
+.active a {
+	background: #ffd42d;
+	color: #2a363a;
+	font-size: 150%;
 }
 nav a {
 	width: 100%;
@@ -168,6 +171,8 @@ nav a:hover {
 	cursor: pointer;
 	background: #ffd42d;
 	color: #2a363a;
+	font-size: 150%;
+	transition: background 400ms ease-in;
 }
 nav a i {
 	padding: 0 15px;
@@ -227,7 +232,7 @@ nav a i {
 	font-weight: 300;
 	color: #606060;
 	padding-bottom: 20px;
-	background: url(/img/orange_sep_top.jpg) no-repeat 0 100%;
+	background: url("images/orange_sep_top.jpg") no-repeat 0 100%;
 }
 .about-me {
 	font-size: 17px;
@@ -237,7 +242,7 @@ nav a i {
 	border-bottom: 1px solid #ededed;
 }
 .personal-info {
-	background: url(/img/orange_sep_bottom.jpg) no-repeat 0 100%;
+	background: url("images/orange_sep_bottom.jpg") no-repeat 0 100%;
 }
 .wrap-tags {
 	padding: 22px 0;
@@ -284,6 +289,9 @@ nav a i {
 .pic {
 	width: 640px;
 	height: 360px;
+	margin: 30px 0 0 0;
+}
+.post img {
 	margin: 30px 0 0 0;
 }
 .right-sidebar h2 {
@@ -392,7 +400,7 @@ input[placeholder], textarea[placeholder] {
 	.logo-bg {
 		width: 100%;
 		height: 210px;
-		background: url(../img/ring_wide.png) no-repeat;
+		background: url("images/ring_wide.png") no-repeat;
 	}
 	.logo-bg img {
 		margin-top: 45px;

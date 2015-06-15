@@ -1,6 +1,10 @@
+		<?php $current_user = wp_get_current_user(); 
+			$get_date = current_time('mysql');
+			$date = explode("-", $get_date);
+		?>
 			</div>
 			<div class="footer">
-				<p>&#169 2014 Robb Armstrong, All Rights Reserved</p>
+				<p>&#169 <?php  echo $date[0]."&nbsp".$current_user->display_name; ?>, All Rights Reserved</p>
 				<div>
 					<a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
